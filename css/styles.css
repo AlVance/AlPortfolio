@@ -1,0 +1,500 @@
+* {
+  /*/cursor: url(../img/pointer.png), auto;/*/
+  scroll-behavior: smooth;
+  margin: 0;
+  color: white;
+  font-family: "Germania One";
+}
+
+
+body {
+  background-image: url(../img/AlPort_BG.gif);
+}
+
+a {
+  text-decoration: none;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+
+section {
+  scroll-margin-top: 7em;
+  padding: 2em;
+  padding-bottom: 4em;
+}
+
+
+/******MENU******/
+#menu {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #120c14;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+
+}
+
+#menu-toggle {
+  display: none;
+  cursor: pointer;
+  align-content: center;
+  height: 1.5em;
+  font-size: 3em;
+}
+
+#menu-left,
+#menu-right {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 30%;
+  font-size: 2em;
+  justify-content: space-evenly;
+}
+
+#menu-title {
+  width: 30%;
+  text-align: center;
+}
+
+#menu-title a {
+  font-size: 3em;
+  text-align: center;
+}
+
+
+/*******************************ABOUT**********************************/
+
+#about {
+  padding-top: 7em;
+}
+
+#about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+#about-container figure img {
+  width: 300px;
+}
+
+#about-container>p {
+  text-align: justify;
+  width: 50%;
+}
+
+#about-container ul {
+  list-style: none;
+  display: flex;
+  padding: 0em;
+  gap: 1em;
+  text-align: center;
+}
+
+#about-container ul li i {
+  font-size: 6em;
+  color: #B400D9;
+}
+
+#about-container ul li i:hover,
+#contact_list i:hover {
+  color: #4e0f5a;
+  transition: 0.3s;
+  cursor: pointer;
+
+}
+
+/***************************PROYECTOS********************************/
+
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+}
+
+.filter-row {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button.active {
+  background-color: #B400D9;
+  transform: scale(0.98);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.filter-buttons button {
+  font-size: 1.7em;
+  background-color: gray;
+  border-radius: 0.5em;
+
+}
+
+#projects_container {
+
+  display: flex;
+  gap: 2em;
+  padding: 2em;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.proyecto {
+  width: 100%;
+  position: relative;
+  max-width: 340px;
+  height: fit-content;
+}
+
+.proyecto figure {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proyecto figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: static;
+  border-radius: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.content {
+  overflow: hidden;
+  max-height: 0;
+}
+
+.content-global {
+  position: relative;
+  width: 100%;
+  background-color: #1d1d1d;
+  border-radius: 1em;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+}
+
+#content-title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 0.8em;
+}
+
+
+
+.content-body {
+  display: flex;
+  gap: 2em;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 1em;
+
+}
+
+#content-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+#content-figure img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 1em;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 1em;
+}
+
+#game-link {
+  text-align: center;
+  background-color: #B400D9;
+  border-radius: 1em;
+  margin: 0 auto;
+  width: 10em;
+  height: 1.5em;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+#game-link:hover {
+  background-color: #4e0f5a;
+}
+
+
+.collapsible {
+  outline: 0.2em solid gray;
+  border-radius: 1em;
+}
+
+.collapsible.active {
+  outline: 0.6em solid #B400D9;
+  transition: 0.3s;
+}
+
+/*****************CURRICULUM*************************/
+
+.columns {
+  display: flex;
+  gap: 2em;
+  margin-top: 2em;
+  justify-content: center;
+}
+
+.column {
+  flex: 1;
+  position: relative;
+}
+
+.column h3 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  border-left: 3px solid #B400D9;
+  padding-left: 0.5em;
+}
+
+.item {
+  position: relative;
+  margin-bottom: 2em;
+  padding-left: 1.5em;
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  top: 0.4em;
+  width: 0.8em;
+  height: 0.8em;
+  background-color: #B400D9;
+  border-radius: 50%;
+  border: 2px solid #252525;
+  box-shadow: 0 0 0 2px #B400D9;
+}
+
+.box {
+  background-color: #251829;
+  padding: 1em;
+  border-radius: 0.5em;
+  border-left: 3px solid #B400D9;
+}
+
+.box h4 {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.box h5 {
+  color: #B400D9;
+  margin: 0.2em 0;
+}
+
+.date {
+  font-size: 0.9em;
+  opacity: 0.7;
+  margin-bottom: 0.5em;
+}
+
+.box ul {
+  padding-left: 1.2em;
+  list-style: disc;
+  margin: 0;
+}
+
+.box ul li {
+  margin-bottom: 0.3em;
+}
+
+
+#pdf-container {
+  text-align: center;
+  background-color: #B400D9;
+  border-radius: 1em;
+  margin: 0 auto;
+  width: 10em;
+  height: 1.5em;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+#pdf-container:hover {
+  background-color: #4e0f5a;
+}
+
+#pdf-container div {
+  cursor: pointer;
+}
+
+/*****************CONTACT*************************/
+#contact_list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+#contact_list li {
+  flex: 20%;
+  text-align: center;
+  padding: 1em;
+  list-style: none;
+}
+
+#contact_list p {
+  text-align: center;
+}
+
+#contact_list i {
+  font-size: 8em;
+  padding: 0.1em 0em;
+  color: #B400D9;
+}
+
+.contact_info {
+  font-size: 0.7em;
+}
+
+
+
+/*****************RESOLUTIONS*************************/
+
+@media screen and (max-width: 1050px) {
+  #menu-title a {
+    font-size: 2em;
+  }
+
+  #menu-left li,
+  #menu-right li {
+    font-size: 0.6em;
+  }
+
+  .content-body {
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  #menu {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  #menu-left,
+  #menu-right,
+  #menu-title {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+
+  }
+
+  #menu-left li,
+  #menu-right li,
+  #menu-title {
+    display: none;
+    margin: 0.5em 0;
+    font-size: 1em;
+  }
+
+  #menu-toggle {
+    display: block;
+    order: 1;
+    width: 100%;
+  }
+
+  #menu-title {
+    order: 2;
+  }
+
+  #menu-left {
+    order: 3;
+  }
+
+  #menu-right {
+    order: 4;
+  }
+
+  #menu-title a {
+    font-size: 2em;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+
+
+
+  #about-container>p {
+    width: 100%;
+  }
+
+
+  #pdf-container {
+    width: 6em;
+    height: 0;
+  }
+
+
+  #contact_list li {
+    flex: 90%;
+  }
+
+  #contact_list li i {
+    font-size: 4em;
+  }
+
+
+  section>div {
+    padding: 1.3em 1.3em;
+  }
+
+}

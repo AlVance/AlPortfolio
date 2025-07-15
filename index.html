@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Al's portfolio</title>
+
+    <!--Icono pestaña -->
+    <!--<link rel="shortcut icon" type="image/ico" href="img/icon.ico">-->
+
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
+
+    <!-- Iconos y doc -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <nav id="menu">
+        <div id="menu-toggle">
+            <i class="fas fa-bars" onclick="menu()"></i>
+        </div>
+        <ul id="menu-left">
+            <li>
+                <a href="#proyectos" onclick="closeMenu()">PROJECTS</a>
+            </li>
+            <li>
+                <a href="#curriculum" onclick="closeMenu()">CURRICULUM</a>
+            </li>
+
+
+        </ul>
+
+        <div id="menu-title">
+            <a href="#" onclick="closeMenu()">ÁL'S PORTFOLIO</a>
+        </div>
+        <ul id="menu-right">
+            <li>
+                <a href="#contact" onclick="closeMenu()">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!--****************************ABOUT ME*********************************-->
+    <section id="about">
+        <div id="about-container">
+            <figure>
+                <img src="img/Captura de pantalla 2025-07-02 192323.png">
+            </figure>
+            <p>
+                ÁLVARO TORRE VAN CUTSEM <br />
+                GAME DEVELOPER <br />
+                GAME DESIGNER <br />
+                Making ideas move!
+            </p>
+            <ul id="about-links">
+                <li>
+                    <a href="https://www.linkedin.com/in/%C3%A1lvaro-torre-van-cutsem/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <p>Álvaro Torre Van Cutsem</p>
+                </li>
+                <li>
+                    <a href="https://alakama.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+                    <p>Alakama</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- *********GALERÍA DE PROYECTOS********* -->
+    <section id="proyectos">
+        <h2>PROJECTS</h2>
+        <div class="filter-buttons">
+            <!-- Fila Engine -->
+            <div class="filter-row">
+                <button data-category="all-engine" data-group="engine" class="active">Any</button>
+                <button data-category="unity" data-group="engine">Unity</button>
+                <button data-category="unreal" data-group="engine">Unreal</button>
+            </div>
+
+            <!-- Fila Roles -->
+            <div class="filter-row">
+                <button data-category="all-role" data-group="role" class="active">Any</button>
+                <button data-category="programmer" data-group="role">Programmer</button>
+                <button data-category="designer" data-group="role">Designer</button>
+                <button data-category="artist" data-group="role">Artist</button>
+            </div>
+        </div>
+        <div id="projects_container">
+
+            <!-- TIME KILLER -->
+            <div class="proyecto" data-category="unity programmer designer artist">
+                <figure class="collapsible">
+                    <img src="img/TimeKillerGif.gif" alt="">
+                </figure>
+                <div class="content">
+                    <div id="content-title">TIME KILLER</div>
+
+                    <div class="content-body">
+                        <div class="left-column">
+                            <div id="content-tags">TAGS: Unity, Designer, Programmer, Artist</div>
+                            <div id="content-figure">
+                                <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/dpC6FpOkNTI?si=__DfZhXuMNRdd6hg"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="right-column">
+                            <div id="content-description">
+                                Time Killer is a 3D platformer where you have to prove your skill by completing levels
+                                in a race against time.<br />
+                                In each level, you have a time limit to complete it. The time you have left over in each
+                                level will accumulate in your reserve, and you will be able to use it in future levels.
+                            </div>
+                            <div id="content-points-title">
+                                COOL THINGS I DID IN THIS PROJECT:
+                            </div>
+                            <div id="content-points">
+                                <ul>
+                                    <li>Creation of the game concept.</li>
+                                    <li>
+                                        Design and programming of a quick and responsive physics-based 3D controller
+                                        which works with any camera angle.
+                                    </li>
+                                    <li>Fast, cool, and optimized level progression.</li>
+                                    <li>
+                                        Online capabilities with a registration system and a leaderboard (and the
+                                        possibility of still playing offline).
+                                    </li>
+                                    <li>Deal with great amount of optimizations for a target 60fps build on Web.</li>
+                                    <li>Concept, 3D modeling, texture paint, rigging and modeling.</li>
+                                </ul>
+                            </div>
+                            <a id="game-link" href="https://alakama.itch.io/time-killer" target="_blank">
+                                <div>Link to the game</div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MYRMICA -->
+            <div class="proyecto" data-category="unreal programmer designer artist">
+                <figure class="collapsible">
+                    <img src="img/MirmycaGif.gif" alt="">
+                </figure>
+                <div class="content">
+                    <div id="content-title">MYRMICA</div>
+
+                    <div class="content-body">
+                        <div class="left-column">
+                            <div id="content-tags">TAGS: Designer, Programmer, Artist</div>
+                            <div id="content-figure">
+                                <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/ShOjy29skAk?si=sG5sZL8igJgubIhU"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="right-column">
+                            <div id="content-description">
+                                Myrmica is an investigation and puzzle adventure viewed from an isometric perspective.
+                                Explore a petrol station while chased by a time anomaly.<br />
+                                Manipulate the routines of 5 unique characters to achieve your goal, create your own
+                                scenarios while trapped in a time loop, and uncover the truth of Complex B13B.
+                            </div>
+                            <div id="content-points-title">
+                                COOL THINGS I DID IN THIS PROJECT:
+                            </div>
+                            <div id="content-points">
+                                <ul>
+                                    <li>
+                                        Designing puzzles combined with the narrative. Progression and difficulty
+                                        design.
+                                    </li>
+                                    <li>
+                                        Creation GDDs for the gameplay, and write and record tutorials of implementation
+                                        tutorials for other designers.
+                                    </li>
+                                    <li>
+                                        Write technical documentation for programmers, being the bridge between Design
+                                        and Programming teams.
+                                    </li>
+                                    <li>Blueprint programming and bug fixing.</li>
+                                    <li>Assets implementation.</li>
+                                    <li>Creating presentations and showing them to the publisher.</li>
+                                    <li>Creation of shaders and materials, 3D modeling.</li>
+                                </ul>
+                            </div>
+                            <a id="game-link" href="https://store.steampowered.com/app/3276840/Myrmica/" target="_blank">
+                                <div>Link to the game</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TBYOYL -->
+            <div class="proyecto" data-category="unity designer programmer artist">
+                <figure class="collapsible">
+                    <img src="img/TBYOYGif.gif" alt="">
+                </figure>
+                <div class="content">
+                    <div id="content-title">THE BEST YEARS OF YOUR LIFE</div>
+
+                    <div class="content-body">
+                        <div class="left-column">
+                            <div id="content-tags">TAGS: Unity, Designer, Programmer, Artist</div>
+                            <div id="content-figure">
+                                <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/7vbHcwvTXJM?si=adlVqsBYpoGti6yt"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="right-column">
+                            <div id="content-description">
+                                The best years of your life is a serious simulation game where you will have to take
+                                care of your character while facing the university stage.<br />
+                                In this game you'll have to maintain the stats of your character to prevent them from
+                                contracting problems that will damage his health.
+                            </div>
+                            <div id="content-points-title">
+                                COOL THINGS I DID IN THIS PROJECT:
+                            </div>
+                            <div id="content-points">
+                                <ul>
+                                    <li>Design how the systems worked and balancing their stats.</li>
+                                    <li>Programming the core gameplay, utilizing tons of smart objects.</li>
+                                    <li>Programming dev tools to help the rest of the team with the implementation.</li>
+                                    <li>
+                                        Consult with mental health experts and patients about the themes of the game and
+                                        its moral usage.
+                                    </li>
+                                    <li>Make the character and misc in pixelart.</li>
+                                </ul>
+                            </div>
+                            <a id="game-link" href="https://alakama.itch.io/the-best-years-of-my-life" target="_blank">
+                                <div>Link to the game</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- YO CREATURETO -->
+            <div class="proyecto" data-category="unity designer programmer">
+                <figure class="collapsible">
+                    <img src="img/YoCreatureto_Trim.gif" alt="">
+                </figure>
+                <div class="content">
+                    <div id="content-title">YO, CREATURETO</div>
+                    <div class="content-body">
+                        <div class="left-column">
+                            <div id="content-tags">TAGS: Unity, Designer, Programmer</div>
+                            <div id="content-figure">
+                                <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/tX9Mp6yNPWI?si=PtUcSWSqWDZKAQfb"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="right-column">
+                            <div id="content-description">
+                                Yo, Creatureto is an arcade runner game based on the #holdmybeer section of the famous
+                                spanish podcast “Yo, Interneto”, in collaboration with Mahou 5 Estrellas.<br />
+                                In this game, you will play as the “Creaturas” which are some kind of Frankenstein-like
+                                creatures created by different pieces of iconic videogame characters.
+                            </div>
+                            <div id="content-points-title">
+                                COOL THINGS I DID IN THIS PROJECT:
+                            </div>
+                            <div id="content-points">
+                                <ul>
+                                    <li>Create a game for and negotiate with a larger client.</li>
+                                    <li>Create and integrate product placement.</li>
+                                    <li>Design and programming of a quick and arcade-like experience.</li>
+                                    <li>Make the game playable in web, mobile and desktop.</li>
+                                    <li>Registration system and a leaderboard.</li>
+                                    <li>Set-up and rigging of 2D characters.</li>
+                                </ul>
+                            </div>
+                            <a id="game-link" href="https://kiwiteam.itch.io/yocreatureto-dinogame" target="_blank">
+                                <div>Link to the game</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ALPINE PALS -->
+            <div class="proyecto" data-category="unity designer programmer">
+                <figure class="collapsible">
+                    <img src="img/AP_Trim.gif" alt="">
+                </figure>
+                <div class="content">
+                    <div id="content-title">ALPINE PALS</div>
+                    <div class="content-body">
+                        <div class="left-column">
+                            <div id="content-tags">TAGS: Unity, Designer, Programmer</div>
+                            <div id="content-figure">
+                                <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/FxZVhYSpq28?si=OcqeX603xyIOhQO9"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="right-column">
+                            <div id="content-description">
+                                Alpine Pals is a local coop 2D platformer game in which two pals have to cooperate to
+                                get to the top of every mountain without falling.<br />
+                                This game was created for the Spain Game Devs Jam III. We had 7 days to create a game
+                                with the theme "union" and this was the outcome.
+                            </div>
+                            <div id="content-points-title">
+                                COOL THINGS I DID IN THIS PROJECT:
+                            </div>
+                            <div id="content-points">
+                                <ul>
+                                    <li>Design and program the whole game in just 7 days!</li>
+                                    <li>Design 5 levels with an incremental difficulty.</li>
+                                    <li>Both players are physics-based and connected by a rope (also physics-based).</li>
+                                    <li>Local coop game playable in the same keyboard/controller.</li>
+                                </ul>
+                            </div>
+                            <a id="game-link" href="https://alakama.itch.io/alpinepals" target="_blank">
+                                <div>Link to the game</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ECLIPSE -->
+            <div class="proyecto" data-category="unity designer">
+                <figure class="collapsible">
+                    <img src="img/EDD_Trim+(1).gif" alt="">
+                </figure>
+                <div class="content">
+                    <div id="content-title">ECLIPSE: DAWN OF DARKNESS</div>
+                    <div class="content-body">
+                        <div class="left-column">
+                            <div id="content-tags">TAGS: Unity, Designer</div>
+                            <div id="content-figure">
+                                <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/fH0R-SiH-mU?si=lB0G0_m3t2eTi5TO"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="right-column">
+                            <div id="content-description">
+                                Eclipse: Dawn of Darkness is a dungeon Crawler/ Hack 'n' Slash in which two players have
+                                to cooperate to defeat all the enemies in the dungeon and escape.<br />
+                                One of the most interesting feature of the game is the mix of 3D environments and 2D
+                                pixel characters and interactable items.
+                            </div>
+                            <div id="content-points-title">
+                                COOL THINGS I DID IN THIS PROJECT:
+                            </div>
+                            <div id="content-points">
+                                <ul>
+                                    <li>Design a coop dependant game mechanic as the core mechanic of the game.</li>
+                                    <li>
+                                        Level design thought around individual encounters for the main mechanic to
+                                        shine.
+                                    </li>
+                                    <li>Local coop game playable in the same keyboard/controller.</li>
+                                    <li>Enemy and IA design for a variety of enemies and a final boss encounter.</li>
+                                </ul>
+                            </div>
+                            <a id="game-link" href="https://megalodoncorps.itch.io/eclipse-dawn-of-darkness" target="_blank">
+                                <div>Link to the game</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NÜWA -->
+            <div class="proyecto" data-category="unity designer programmer">
+                <figure class="collapsible">
+                    <img src="img/Nuwa+Trailer+(1)_Trim.gif" alt="">
+                </figure>
+                <div class="content">
+                    <div id="content-title">NÜWA</div>
+                    <div class="content-body">
+                        <div class="left-column">
+                            <div id="content-tags">TAGS: Unity, Designer, Programmer</div>
+                            <div id="content-figure">
+                                <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/s3klocuc18g?si=F1KpPC-FwvqkJKqU"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="right-column">
+                            <div id="content-description">
+                                An online coop multiplayer where two players who embody the Traveler and Nüwa, will have
+                                to cooperate to repair the firmament, solving different puzzles making use of their
+                                unique abilities, and taking into account their physical limitations.
+                            </div>
+                            <div id="content-points-title">
+                                COOL THINGS I DID IN THIS PROJECT:
+                            </div>
+                            <div id="content-points">
+                                <ul>
+                                    <li>Design and program an asymmetric online coop multiplayer.</li>
+                                    <li>
+                                        Design and program two completely different player characters, a humanoid one
+                                        and a flying one, that can complement each other.
+                                    </li>
+                                    <li>Design the game around non-verbal communication.</li>
+                                    <li>Worked with Photon as the multiplayer framework with P2P connections.</li>
+
+                                </ul>
+                            </div>
+                            <a id="game-link" href="https://ayeayearts.itch.io/nuwa" target="_blank">
+                                <div>Link to the game</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DLH -->
+            <div class="proyecto" data-category="unity designer programmer">
+                <figure class="collapsible">
+                    <img src="img/DLHGif.gif" alt="">
+                </figure>
+                <div class="content">
+                    <div id="content-title">DETECTIVE LATE HOUR'S</div>
+
+                    <div class="content-body">
+                        <div class="left-column">
+                            <div id="content-tags">TAGS: Unity, Designer, Programmer</div>
+                            <div id="content-figure">
+                                <img src="img/DLHGif.gif" alt="">
+                            </div>
+                        </div>
+
+                        <div class="right-column">
+                            <div id="content-description">
+                                "**-year-old white male was found dead in the ballroom of the Omni Kurtis House luxury
+                                hotel."<br />
+                                Detective late hour's is a puzzle-investigation game in which you have to solve a murder
+                                mystery with just a detective's interface: a blackboard and tons of clues.
+                            </div>
+                            <div id="content-points-title">
+                                COOL THINGS I DID IN THIS PROJECT:
+                            </div>
+                            <div id="content-points">
+                                <ul>
+                                    <li>Design an UI-only game.</li>
+                                    <li>Design and program a simple interaction system and clear controls.</li>
+                                    <li>Write a short murder-mystery story.</li>
+                                </ul>
+                            </div>
+                            <a id="game-link" href="https://granj.itch.io/dlh" target="_blank">
+                                <div>Link to the game</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TURRET FARMER -->
+            <div class="proyecto" data-category="unity designer programmer artist">
+                <figure class="collapsible">
+                    <img src="img/TurretFarmerrGIF.gif" alt="">
+                </figure>
+                <div class="content">
+                    <div id="content-title">TURRET FARMER</div>
+                    <div class="content-body">
+                        <div class="left-column">
+                            <div id="content-tags">TAGS: Unity, Designer, programmer, artist</div>
+                            <div id="content-figure">
+                                <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/6lTXXHAdvok?si=FsNkxG4GKk2MC3Q2"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="right-column">
+                            <div id="content-description">
+                                Turret farmer is an idle/incremental game in which you have to shoot jelly to make
+                                profit and upgrade your tank/harvester!
+                            </div>
+                            <div id="content-points-title">
+                                COOL THINGS I DID IN THIS PROJECT:
+                            </div>
+                            <div id="content-points">
+                                <ul>
+                                    <li>Concept to game in just 14 days.</li>
+                                    <li>Design an incremental mechanic and balance it.</li>
+                                    <li>
+                                        Design and program a simple control scheme for touch screens that could also
+                                        work on desktop.
+                                    </li>
+                                    <li>Release a game on the Play Store as a solo-dev.</li>
+                                    <li>Use 3D model renders to make 2D sprites and animations.</li>
+                                </ul>
+                            </div>
+                            <a id="game-link" href="https://alakama.itch.io/turret-farmer" target="_blank">
+                                <div>Link to the game</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RONIN -->
+            <div class="proyecto" data-category="unreal designer programmer">
+                <figure class="collapsible">
+                    <img src="img/Ronin_Trim+(1).gif" alt="">
+                </figure>
+                <div class="content">
+                    <div id="content-title">RONIN</div>
+
+                    <div class="content-body">
+                        <div class="left-column">
+                            <div id="content-tags">TAGS: Unreal, Designer, Programmer</div>
+                            <div id="content-figure">
+                                <img src="img/Ronin_Trim+(1).gif" alt="">
+                            </div>
+                        </div>
+
+                        <div class="right-column">
+                            <div id="content-description">
+                                Ronin it's a single player game with a TopDown view set in Feudal Japan where the player
+                                must end waves of enemies. <br />
+                                Each completed round gives an improvement of his choosing on the character to face waves
+                                with constantly increasing difficulty.
+                            </div>
+                            <div id="content-points-title">
+                                COOL THINGS I DID IN THIS PROJECT:
+                            </div>
+                            <div id="content-points">
+                                <ul>
+                                    <li>Program the entire game using UE blueprints.</li>
+                                </ul>
+                            </div>
+                            <a id="game-link" href="https://granj.itch.io/ronin" target="_blank">
+                                <div>Link to the game</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADCPWECP -->
+            <div class="proyecto" data-category="unity designer programmer">
+                <figure class="collapsible">
+                    <img src="img/ADCPWECP_Trim.gif" alt="">
+                </figure>
+                <div class="content">
+                    <div id="content-title">A double cheese pizza with extra cheese, please</div>
+
+                    <div class="content-body">
+                        <div class="left-column">
+                            <div id="content-tags">TAGS: Unity, Designer, Programmer</div>
+                            <div id="content-figure">
+                                <img src="img/ADCPWECP_Trim.gif" alt="">
+                            </div>
+                        </div>
+
+                        <div class="right-column">
+                            <div id="content-description">
+                                The premise of the creation of this game was to create a world with so few physical barriers as possible. <br />
+                                So we made this pseudo-open world where you have to deliver pizzas ASAP.
+                            </div>
+                            <div id="content-points-title">
+                                COOL THINGS I DID IN THIS PROJECT:
+                            </div>
+                            <div id="content-points">
+                                <ul>
+                                    <li>Design a borderless game world.</li>
+                                    <li>Design a level that is can be traverse from anywhere while traversing it is still interesting and challenging.</li>
+                                </ul>
+                            </div>
+                            <a id="game-link" href="https://granj.itch.io/ronin" target="_blank">
+                                <div>Link to the game</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- *********CV********* -->
+    <section id="curriculum">
+        <h2>CURRICULUM</h2>
+        <div class="columns">
+            <!-- EDUCATION -->
+            <div class="column education">
+                <h3>Education</h3>
+
+                <div class="item">
+                    <div class="line"></div>
+                    <div class="box">
+                        <h4>Master’s degree in videogame design</h4>
+                        <h5>U-TAD</h5>
+                        <p class="date">2023 - 2024</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="line"></div>
+                    <div class="box">
+                        <h4>
+                            Bachelor’s degree in videogame design and development
+                        </h4>
+                        <h5>UDIT</h5>
+                        <p class="date">2018 - 2022</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="line"></div>
+                    <div class="box">
+                        <h4>Certificate in Advanced English (C1)</h4>
+                        <h5>Cambridge english</h5>
+                        <p class="date">2018</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WORK EXPERIENCE -->
+            <div class="column experience">
+                <h3>Work Experience</h3>
+
+                <div class="item">
+                    <div class="line"></div>
+                    <div class="box">
+                        <h4> GAME DESIGNER GENERALIST</h4>
+                        <h5>Paranoia Studios</h5>
+                        <p class="date">Mar '24 - Oct '24</p>
+                        <ul>
+                            <li>Puzzle and narrative design, progression and difficulty design.</li>
+                            <li>GDD and creation of implementation tutorials for designers.</li>
+                            <li>
+                                Technical documentation for programmers, being the bridge between Design
+                                and Programming teams.
+                            </li>
+                            <li>Blueprint programming and bug fixing.</li>
+                            <li>Assets implementation.</li>
+                            <li>Creating presentations and showing them to the publisher.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="line"></div>
+                    <div class="box">
+                        <h4>UNITY DEVELOPER</h4>
+                        <h5>Futura Vive</h5>
+                        <p class="date">Sep '22 - Apr '23</p>
+                        <ul>
+                            <li>
+                                Start to end participation in each of the projects, developing them in Unity and
+                                C# in a small team of two.
+                            </li>
+                            <li>UI designing and UX refinement of the products.</li>
+                            <li>Publishing and managing apps in the Play Store and App Store.</li>
+                            <li>Developing for non-traditional technologies such as robots and AR.</li>
+                            <li>Pitch ideas to costumers face-to-face.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="line"></div>
+                    <div class="box">
+                        <h4>JUNIOR GAME DESIGNER AND QA</h4>
+                        <h5>5th Element Gaming</h5>
+                        <p class="date">Oct '20 - Feb '21</p>
+                        <ul>
+                            <li>Bug reporting and fixing non-programming related ones.</li>
+                            <li>Progression, difficulty and stats game balancing.</li>
+                            <li>Daily documentation and test plans creation.</li>
+                            <li>GDDs and brainstorming development.</li>
+                            <li>Unity implementation and prototyping.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pdf-container">
+            <a href="Utils/CV_AlvaroTorreVanCutsem.pdf" target="_blank">
+                <div>Link to my CV</div>
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- ***************CONTACTO***************** -->
+    <section id="contact">
+        <h2>CONTACT</h2>
+        <div id="contact_list">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-envelope" onclick="CopyText('alvarotvance@gmail.com')"></i>
+                    <p>alvarotvance@gmail.com</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone" onclick="CopyText('+34 601 233 146')"></i>
+                    <p>+34 601 233 146</p>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/%C3%A1lvaro-torre-van-cutsem/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <p>Álvaro Torre Van Cutsem</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+
+</html>
